@@ -1,6 +1,6 @@
 {
   "name": "ik-select-wealth-health",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "ik-select-component-library",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -14,6 +14,7 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "test": "jest --config jestconfig.json",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run prettier && npm run lint"
@@ -21,7 +22,10 @@
   "author": "ingo knorr (iKnorr)",
   "license": "MIT",
   "devDependencies": {
+    "@testing-library/react": "^14.1.2",
+    "@types/jest": "^29.5.9",
     "@types/react": "^18.2.38",
+    "@types/react-dom": "^18.2.16",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "eslint": "^8.54.0",
@@ -29,9 +33,18 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.7.0",
+    "jest-canvas-mock": "^2.5.2",
+    "jest-environment-jsdom": "^29.7.0",
+    "my-react-typescript-package": "^1.0.0",
+    "parcel": "^2.10.3",
     "prettier": "^3.1.0",
+    "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "styled-components": "^6.1.1",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.3.2"
   },
   "peerDependencies": {
