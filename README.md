@@ -1,4 +1,4 @@
-# React ik-select-wealth-health-component Documentation
+# React ik-select-wealth-health Documentation
 
 ## Overview
 
