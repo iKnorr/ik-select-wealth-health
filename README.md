@@ -64,8 +64,6 @@ const MyComponent = () => {
 The **Select** component relies on the following external libraries:
 
 - React
-- React Icons (specifically, `FaAngleDown` and `FaAngleUp` from 'react-icons/fa6')
-- React styled-components (`npm install styled-components`)
 
 `Ensure these dependencies are installed in your project.`
 
